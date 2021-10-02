@@ -6,7 +6,12 @@ var emojiDictionary = {
   "😉": "Winking Face",
   "😢": "Crying Face",
   "😳": "Flushed Face",
-  "😠": "Angry Face"
+  "😠": "Angry Face",
+  "🤔": "Thinking Face",
+  "🤑": "Money-Mouth Face",
+  "🤗": "Hugging Face",
+  "😟": "Worried Face",
+  "😐": "Neutral Face"
 };
 
 var emojiList = Object.keys(emojiDictionary);
@@ -34,23 +39,25 @@ export default function App() {
   return (
     <div className="App">
       <h1>Emoji Dictionary</h1>
-      <input
-        onChange={emojiInputhandler}
-        placeholder="Enter emoji icon"
-      ></input>
-      <h2>{meaning}</h2>
-      <h3>Frequently used Emoji</h3>
-      <div>
-        {emojiList.map(function (emoji) {
-          return (
-            <span
-              style={{ cursor: "pointer" }}
-              onClick={() => emojiClickHandler(emoji)}
-            >
-              {emoji}
-            </span>
-          );
-        })}
+      <div className="container">
+        <input
+          onChange={emojiInputhandler}
+          placeholder="Enter emoji icon"
+        ></input>
+        <h2>{meaning}</h2>
+        <h3>Frequently used Emoji</h3>
+        <div>
+          {emojiList.map(function (emoji) {
+            return (
+              <span
+                style={{ cursor: "pointer" }}
+                onClick={() => emojiClickHandler(emoji)}
+              >
+                {emoji}
+              </span>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

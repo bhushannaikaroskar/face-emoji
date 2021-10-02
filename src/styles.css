@@ -1,0 +1,27 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+body {
+  width: 100%;
+  margin: auto;
+}
+
+h1 {
+  background-color: aquamarine;
+  padding: 1rem;
+}
+
+input {
+  padding: 0.5rem;
+  width: 80%;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  border: 1.5px solid black;
+}
+
+span {
+  padding: 0.5rem;
+  font-size: 2rem;
+}

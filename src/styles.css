@@ -8,14 +8,21 @@ body {
   margin: auto;
 }
 
+.container {
+  padding: 1rem;
+  max-width: 600px;
+  margin: auto;
+}
+
 h1 {
   background-color: aquamarine;
   padding: 1rem;
 }
 
 input {
+  box-sizing: border-box;
   padding: 0.5rem;
-  width: 80%;
+  width: 100%;
   font-size: 1.5rem;
   border-radius: 5px;
   border: 1.5px solid black;
